@@ -1,0 +1,22 @@
+# Example: Mo L3-edge calibration using (NH4)2MoS4 as the reference
+# compound, then applying the resulting shift to a couple of target
+# complexes computed with the same functional/POTCAR/edge.
+#
+# Swap in your own edge (e.g. S K-edge, Ni L-edge, N K-edge, ...),
+# reference compound, and targets by editing the values below or by
+# copying this file to a new one (e.g. examples/s_k_edge.yaml).
+
+edge: "Mo L3-edge"
+
+calibration:
+  name: "(NH4)2MoS4 -- reference, exp. value from J. Phys. Chem. C 2021, 125, 32, 17761-17773"
+  E_fermi: 1.8166        # eV, Fermi level from ground-state (SCF) OUTCAR
+  E_ch: -213.65606       # eV, total energy of the core-hole (XCH) calculation
+  E_gs: -285.53067       # eV, total energy of the ground-state (SCF) calculation
+  E_core: -19816.9363    # eV, core-level reference energy from the POTCAR
+  E_ex_raw: 2505.19      # eV, raw computed excitation energy for this reference compound
+  Ref_value: 2522.4      # eV, experimental/literature edge energy for this reference compound
+
+targets:
+  - name: "example target complex"
+    E_ex_raw: 2498.7      # eV, raw excitation energy computed the same way, no experimental value needed
