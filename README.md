@@ -12,5 +12,4 @@ state analysis, and XANES edge-position alignment against experiment.
   experimental XANES edge positions, generalized to any edge/compound.
   See that folder's own README for details and usage.
 
-More components (melt-quench AIMD setup, structural/XANES analysis
-scripts) to be added as they're finalized.
+
