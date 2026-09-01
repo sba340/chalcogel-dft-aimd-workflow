@@ -26,6 +26,13 @@ Optional flags: `--out` (output filename), `--offset` / `--shift-right`
 
 ## Example
 
-`example_data/` contains a sample simulated PCF and experimental PDF pair
-for a Fe0.5Mo3S13 chalcogel, reproducing the comparison figure used in the
-manuscript.
+`example_data/` contains a simulated PCF (`PCF_5ps.dat`) and experimental
+PDF (`Mn_0_5_Mo3S13-GO_PDF.dat`) pair for a Mn0.5Mo3S13 chalcogel. Reproduce
+the comparison figure with:
+
+```bash
+python pcf_pdf_comparison.py example_data/PCF_5ps.dat example_data/Mn_0_5_Mo3S13-GO_PDF.dat \
+    --sim-label "Mn0.5Mo3S13 PCF Simulation" \
+    --exp-label "Mn0.5Mo3S13 PDF Experiment" \
+    --annotate "1.98:S-S" "2.30:Mo/Mn-S" "2.7:Mo-Mo"
+```
