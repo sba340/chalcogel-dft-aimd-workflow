@@ -12,6 +12,7 @@ whitespace-delimited — the standard output format of common PCF/PDF tools.
 ## Requirements
 pip install -r requirements.txt
 
+
 ## Usage
 
 ```bash
@@ -23,8 +24,6 @@ python pcf_pdf_comparison.py sim.dat exp.dat \
 
 Optional flags: `--out` (output filename), `--offset` / `--shift-right`
 (align sim curve to exp curve), `--xlim` / `--ylim` (axis ranges).
-
-
 
 ## Example
 
