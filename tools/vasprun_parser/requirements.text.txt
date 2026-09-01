@@ -1,0 +1,3 @@
+pymatgen
+pandas
+matplotlib
