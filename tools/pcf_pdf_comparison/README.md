@@ -16,13 +16,15 @@ pip install -r requirements.txt
 
 ```bash
 python pcf_pdf_comparison.py sim.dat exp.dat \
-    --sim-label "Fe0.5Mo3S13 PCF Simulation" \
-    --exp-label "Fe0.5Mo3S13 PDF Experiment" \
-    --annotate "1.98:S-S" "2.30:Mo/Fe-S" "2.7:Mo-Mo"
+    --sim-label "Mn0.5Mo3S13 PCF Simulation" \
+    --exp-label "Mn0.5Mo3S13 PDF Experiment" \
+    --annotate "1.98:S-S" "2.30:Mo/Mn-S" "2.7:Mo-Mo"
 ```
 
 Optional flags: `--out` (output filename), `--offset` / `--shift-right`
 (align sim curve to exp curve), `--xlim` / `--ylim` (axis ranges).
+
+
 
 ## Example
 
